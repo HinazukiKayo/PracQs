@@ -1,4 +1,4 @@
-/* Trees
+/* What Alex thinks will be in the prac exam.
 
 I've laballed the likelihood the question is going to appear in the exam and also the time you should be able to do it in 
 
@@ -10,10 +10,10 @@ Extremely likely = YOU MUST LEARN TO DO THIS BEFORE HEADING IN THE EXAM.
 */
 
 
-// 1. Given a BST print out all the nodes in inorder, preorder and postorder traversal. [Hint: Recursion will be easier.] (Extremely likely/ <2 mins)
+// 1. Given a BST print out all the nodes in preorder, inorder and postorder traversal. [Hint: Recursion will be easier.] (Extremely likely/ <2 mins)
 
 void preorder (Tree t);
-void postorder (Tree t);
+void inorder (Tree t);
 void postorder (Tree t);
 
 // 2. Given an integer linked list convert it into a BST. (Normal - likely/ < 10 mins)
@@ -22,11 +22,11 @@ Tree listToBst (Link list);
 
 // 3. Implement depth-first search on a given graph using recursion (also do it without recursion). (Unlikely)
 
-void depthFirst(Graph g);
+void depthFirstSearch(Graph g);
 
 // 4. Implement breadth-first search on a given graph using recursion (also do it without recursion). (Unlikely)
 
-void breadthFirst(Graph g);
+void breadthFirstSearch(Graph g);
 
 // 5. Given an BST of integers and an integer, insert the integer into the BST (Likely)
 
@@ -54,8 +54,34 @@ Tree deleteElement (Tree tree);
 Tree deleteLargest (Tree tree);
 
 
+// Given an graph and a path (The path is defined by an edges array). Determine if this path is Eulerian.
+// We need this function to pass in nE. Why? (Hint: It's to do with how functions "pass arrays")
+// (Normal/ < 5 mins)
+
+int isEulerPath(Graph g, Edge e[], int nE);
 
 
 
-2016 Prac predictions
 
+
+/* 2016 Prac predictions */
+
+
+
+
+
+
+/* Interview questions. Probably not going to be tested by very useful. */
+
+//Implement a function that reflects a BST. For example
+
+//              6                 6 
+//             / \               / \
+//            4   9             9   4
+//           / \ / \           / \  /\
+//          3  5 7  10        10 7 5  3
+
+//           Original          Reflected
+
+
+Tree reflectBST (Tree tree);
