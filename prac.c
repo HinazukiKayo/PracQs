@@ -20,13 +20,6 @@ void postorder (Tree t);
 
 Tree listToBst (Link list);
 
-// 3. Implement depth-first search on a given graph using recursion (also do it without recursion). (Unlikely)
-
-void depthFirstSearch(Graph g);
-
-// 4. Implement breadth-first search on a given graph using recursion (also do it without recursion). (Unlikely)
-
-void breadthFirstSearch(Graph g);
 
 // 5. Given an BST of integers and an integer, insert the integer into the BST (Likely)
 
@@ -52,6 +45,20 @@ Tree deleteElement (Tree tree);
 // For simplicity you may assume theres no duplicates. (Normal/ < 5 mins)
 
 Tree deleteLargest (Tree tree);
+
+
+
+/* GRAPHS */
+
+
+// Implement depth-first search on a given graph using recursion (also do it without recursion). (Extremely likely)
+
+void depthFirstSearch(Graph g);
+
+
+// Implement breadth-first search on a given graph using recursion (also do it without recursion). (Extremely likely)
+
+void breadthFirstSearch(Graph g);
 
 
 // Given an graph and a path (The path is defined by an edges array). Determine if this path is Eulerian.
@@ -85,3 +92,19 @@ int isEulerPath(Graph g, Edge e[], int nE);
 
 
 Tree reflectBST (Tree tree);
+
+
+// Given a BST, a min value and a max value, trim the BST such that all values outside the min-max range are removed.
+// That is, keep all values of between the range (inclusive) in the resulting BST.
+
+// Example, if [min, max] = [3, 14]
+
+//              13               13  
+//             / \              /  \
+//            3  14            3   14
+//           / \   \                 \ 
+//          1  4   18                18
+
+//           Original   
+
+Tree trimTree (Tree tree);
